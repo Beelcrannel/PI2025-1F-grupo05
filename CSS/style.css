@@ -50,34 +50,6 @@ h1{
 .imagemlogo{
     width: 0 auto;
 }
-.historia{
-    display: flex;
-    align-items: baseline;
-}
-.menu{
-    display: flex;
-    align-items: baseline;
-}
-.pesquisa{
-    display: flex;
-    align-items: baseline;
-}
-.galeria{
-    display: flex;
-    align-items:flex-end
-}
-.linhadotempo{
-    display: flex;
-    align-items: baseline;
-}
-.login{
-    display: flex;
-    align-items: baseline;
-}
-.i{
-    display: flex;
-    align-items: baseline;
-}
 .menutopo {
     background-color: #17165d;
     color: #fff;
@@ -107,4 +79,12 @@ h1{
 
 .menutopo a:hover {
     text-decoration: underline;
+}
+.gradient{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg #08CB00 #253900 #000000 #EEEEEE);
 }
