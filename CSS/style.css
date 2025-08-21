@@ -1,33 +1,34 @@
-  :root {
-            --body-bg: #fafafa;
-            --body-color: #555;
-            --link-color: #222;
-            --link-color-hover: #ec5840;
-        }
+:root {
+    --body-bg: #fafafa;
+    --body-color: #555;
+    --link-color: #222;
+    --link-color-hover: #ec5840;
+    --text-color: #555; 
+}
 
-        .dark-mode {
-            --body-bg: #0f2814;
-            --body-color: #0f2814;
-            --link-color: #dee2e6;
-            --link-color-hover: #3cc368;
-            --color: #dddddd;
-        }
+.dark-mode {
+    --body-bg: #0f2814;
+    --body-color: #0f2814;
+    --link-color: #dee2e6;
+    --link-color-hover: #3cc368;
+    --text-color: #dddddd;
+}
 
-        body {
-            background-color: var(--body-bg);
-            color: var(--body-color);
-            color: var(--color);
-            transition: background-color 0.3s, color 0.3s; 
-        }
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; 
+}
 
-        a {
-            color: var(--link-color);
-        }
-        a:hover {
-            color: var(--link-color-hover);
-        }
-.butao{
-    display: flex;
+a {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-color-hover);
+}
+
+.butao {
+    display: inline-flex; 
     justify-content: flex-end;
     background-color: #0f2814;
     border: none;
@@ -35,49 +36,23 @@
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
     transition-duration: 0.4s;
 }
-h1{
+
+h1 {
     display: flex;
     justify-content: center;
 }
 
-.imagemlogo{
-    width: 0 auto;
+.imagemlogo {
+    width: 100%; 
+    text-align: center; 
 }
-.historia{
-    display: flex;
-    align-items: baseline;
-}
-.menu{
-    display: flex;
-    align-items: baseline;
-}
-.pesquisa{
-    display: flex;
-    align-items: baseline;
-}
-.galeria{
-    display: flex;
-    align-items:flex-end
-}
-.linhadotempo{
-    display: flex;
-    align-items: baseline;
-}
-.login{
-    display: flex;
-    align-items: baseline;
-}
-.i{
-    display: flex;
-    align-items: baseline;
-}
+
 .menutopo {
     background-color: #17165d;
     color: #fff;
@@ -93,6 +68,7 @@ h1{
     display: flex;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; 
 }
 
 .menutopo li {
@@ -107,4 +83,23 @@ h1{
 
 .menutopo a:hover {
     text-decoration: underline;
+}
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background: linear-gradient(45deg, #08CB00, #253900, #000000, #EEEEEE);
+}
+
+.imagembiblioteca, .imagemconteudos {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagembiblioteca img, .imagemconteudos img {
+    max-width: 100%;
+    height: auto;
 }
