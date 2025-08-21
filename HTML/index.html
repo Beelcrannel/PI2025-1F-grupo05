@@ -27,6 +27,14 @@
     </header>
     
     <main>
+        <div class="butao">
+            <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
+        </div>
+        <script>
+            const toggleDarkMode = () => {
+                document.documentElement.classList.toggle('dark-mode');
+            };
+        </script>
         <div class="titulo">
             <h1>Expressa Tec</h1>
         </div>
@@ -40,6 +48,7 @@
         <div class="imagemconteudos">
             <img src="./Imagens/Imagem logo.jpg" alt="Conteúdos" width="400">
         </div>
+
     </main>
 </body>
 </html>
