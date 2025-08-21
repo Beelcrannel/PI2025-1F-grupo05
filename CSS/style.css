@@ -1,3 +1,110 @@
-body{
-    background-color: black;
+  :root {
+            --body-bg: #fafafa;
+            --body-color: #555;
+            --link-color: #222;
+            --link-color-hover: #ec5840;
+        }
+
+        .dark-mode {
+            --body-bg: #0f2814;
+            --body-color: #0f2814;
+            --link-color: #dee2e6;
+            --link-color-hover: #3cc368;
+            --color: #dddddd;
+        }
+
+        body {
+            background-color: var(--body-bg);
+            color: var(--body-color);
+            color: var(--color);
+            transition: background-color 0.3s, color 0.3s; 
+        }
+
+        a {
+            color: var(--link-color);
+        }
+        a:hover {
+            color: var(--link-color-hover);
+        }
+.butao{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0f2814;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.imagemlogo{
+    width: 0 auto;
+}
+.historia{
+    display: flex;
+    align-items: baseline;
+}
+.menu{
+    display: flex;
+    align-items: baseline;
+}
+.pesquisa{
+    display: flex;
+    align-items: baseline;
+}
+.galeria{
+    display: flex;
+    align-items:flex-end
+}
+.linhadotempo{
+    display: flex;
+    align-items: baseline;
+}
+.login{
+    display: flex;
+    align-items: baseline;
+}
+.i{
+    display: flex;
+    align-items: baseline;
+}
+.menutopo {
+    background-color: #17165d;
+    color: #fff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    padding: 7px;
+    font-size: 20px;
+}
+
+.menutopo ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menutopo li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.menutopo a {
+    color: white;
+    text-decoration: none;
+}
+
+.menutopo a:hover {
+    text-decoration: underline;
 }
