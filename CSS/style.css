@@ -121,3 +121,24 @@ main{
     opacity: 0.8;
     border-radius: 8px;
 }
+.menusubtopo{
+    background-color: black ;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+.menusubtopo ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.menusubtopo a{
+    color: white;
+    text-decoration:none;
+}
+.menusubtopo li {
+    list-style-type: none;
+    margin-right: 20px;
+}
