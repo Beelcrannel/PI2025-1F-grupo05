@@ -117,27 +117,6 @@ main{
     padding: 15px;
     margin: 50px;
 }
-.menusubtopo{
-    background-color: black ;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px;
-}
-.menusubtopo ul{
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-.menusubtopo a{
-    color: white;
-    text-decoration:none;
-}
-.menusubtopo li {
-    list-style-type: none;
-    margin-right: 20px;
-}
 .titulo{
     background-color: #0F2814;
     color: white;
