@@ -31,53 +31,38 @@
             </script>
     </header>
     <main>
-        <div class="linha">
-        <h2>Linha</h2>
-        </div>
-        <div class="do">
-        <h2>do</h2>
-        </div>
-        <div class="tempo">
-        <h2>Tempo</h2>
-        </div>
-        <div class="prehistoriaantiguidade">
-        <h4>Pré-história – Antiguidade</h4>
-        <img class="prehistoria" src="./Imagens/Rupestre.png" alt="">
-        <p>Expressões artísticas já eram usadas em rituais de cura por povos antigos (pinturas rupestres, danças e máscaras).</p>
-        </div>
-        <div class="1900–1930">
-            <h4>1900–1930</h4>
-            <img class="sigmundfreud" src="./Imagens/Sigmund.png" alt="">
-            <img class="carljung" src="./Imagens/carljung.png" alt="">
-            <p>Sigmund Freud e Carl Jung destacam o papel simbólico das imagens no inconsciente. Jung começa a usar desenhos de mandalas em terapias.</p>
-        </div>
-        <div class="1940">
-            <h4>1940</h4>
-            <img class="margaretnaumburg" src="./Imagens/Margaret.png" alt="">
-            <img class="edithkramer" src="./Imagens/Edith.png" alt="">
-            <p>Margaret Naumburg e Edith Kramer desenvolvem métodos que estruturam a arte-terapia moderna nos EUA: Naumburg: Arte como expressão do inconsciente. Kramer: Arte com foco no processo criativo.</p>
-        </div>
-        <div class="1970-1980">
-            <h4>1970-1980</h4>
-            <img class="1970-1980" src="https://gero360.com/wp-content/uploads/2021/04/arteterapia02-e1618602408892.jpeg" alt="">
-            <p>A prática da Arteterapia se expandiu para outros países, como Canadá, Austrália, e Brasil. Começou a ser aplicada em diversas áreas além da psiquiatria, como educação, reabilitação física, inclusão social e prevenção de doenças. Também ganhou espaço em clínicas e centros comunitários, consolidando-se como prática terapêutica acessível e interdisciplinar.</p>
-        </div>
-        <div class="1990">
-            <h4>1990</h4>
-            <img class="1990" src="https://www.unisuam.edu.br/wp-content/uploads/2021/08/Neuro.png" alt="">
-            <p>A Arteterapia passou a dialogar com os avanços da neurociência e da psicologia humanista, ganhando respaldo teórico e científico. Pesquisas começaram a comprovar seus benefícios na regulação emocional, no alívio do estresse e no desenvolvimento da autoestima, especialmente em populações vulneráveis, como idosos, crianças e pessoas com transtornos mentais.</p>
-        </div>
-        <div class="2000">
-            <h4>2000</h4>
-            <img class="2000" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT8xnNGKkZ_aIDlprRelPeJw33by-BQOy1jQ&s" alt="">
-            <p>Com a crescente valorização das práticas integrativas em saúde, a Arteterapia ganhou reconhecimento acadêmico e passou a ser oferecida em cursos de graduação e pós-graduação em vários países, inclusive no Brasil. O campo passou a contar com conselhos, associações e regulamentações que profissionalizaram o trabalho do arteterapeuta.</p>
-        </div>
-        <div class="atualidade(2020-2025)">
-            <h4>Atualidade(2020-2025)</h4>
-            <img class="atualidade(2020-2025)" src="https://amenteemaravilhosa.com.br/wp-content/uploads/2017/11/pessoas-praticando-arte.jpg?auto=webp&quality=7500&width=1920&crop=16:9,smart,safe&format=webp&optimize=medium&dpr=2&fit=cover&fm=webp&q=75&w=1920&h=1080" alt="">
-            <p>Hoje, a Arteterapia está em constante atualização, incorporando tecnologias digitais e recursos virtuais, como pintura digital, animação e realidade aumentada. É também reconhecida como Prática Integrativa e Complementar (PIC) pelo SUS no Brasil. Cada vez mais, é utilizada em diferentes contextos: clínicas, escolas, empresas, hospitais e ambientes virtuais.</p>
+        <div class="timeline-carousel">
+            <button id="prev">◀</button>
+            <div class="timeline-track-container">
+            <div class="timeline-track">
+                <div class="timeline-slide">
+                <h4>Pré-história – Antiguidade</h4>
+                <img src="./Imagens/Rupestre.png" alt="Pintura Rupestre">
+                <p>Pinturas e rituais antigos.</p>
+                </div>
+                <div class="timeline-slide">
+                <h4>1900–1930</h4>
+                <img src="./Imagens/Sigmund.png" alt="Sigmund Freud">
+                <p>Freud e Jung estudam imagens no inconsciente.</p>
+                </div>
+                <div class="timeline-slide">
+                <h4>1940</h4>
+                <img src="./Imagens/Margaret.png" alt="Margaret Naumburg">
+                <p>Margaret Naumburg e Edith Kramer desenvolvem arteterapia moderna.</p>
+                </div>
+                <div class="timeline-slide">
+                <h4>1970–1980</h4>
+                <img src="./Imagens/arteterapia1970.jpeg" alt="Arteterapia">
+                <p>Arteterapia se espalha pelo Brasil e outros países.</p>
+                </div>
+            </div>
+            </div>
+            <button id="next">▶</button>
         </div>
     </main>
+
+
+
         <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -99,6 +84,6 @@
             <p>&copy; 2025 Expressa Tec. Todos os direitos reservados.</p>
         </div>
     </footer>
-
+    <script src=".\JS\timeline.js"></script>
 </body>
 </html>
