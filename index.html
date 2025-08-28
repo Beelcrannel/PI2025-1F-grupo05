@@ -21,7 +21,15 @@
                     <li><a href="umpoucosobrearteterapia.html">Sobre Arteterapia</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="butao">
+            <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
         </div> 
+        <script>
+            const toggleDarkMode = () => {
+                document.documentElement.classList.toggle('dark-mode');
+            };
+        </script>
     </header>
 
 
@@ -48,14 +56,6 @@
             </div>    
         </div>
     </main>
-            <div class="butao">
-            <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
-        </div>
-        <script>
-            const toggleDarkMode = () => {
-                document.documentElement.classList.toggle('dark-mode');
-            };
-        </script>
     <footer>
         <p>&copy;Expressa Tec 2025</p>
     </footer>
