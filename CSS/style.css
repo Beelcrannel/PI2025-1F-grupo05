@@ -38,7 +38,7 @@
 }
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: black;
     color: white;
     flex-wrap: wrap;
@@ -62,7 +62,7 @@ body{
     background-color: black ;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 7px;
 
@@ -118,6 +118,27 @@ main{
     padding: 15px;
     margin: 50px;
 }
+.menusubtopo{
+    background-color: black ;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+.menusubtopo ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.menusubtopo a{
+    color: white;
+    text-decoration:none;
+}
+.menusubtopo li {
+    list-style-type: none;
+    margin-right: 20px;
+}
 .titulo{
     background-color: #0F2814;
     color: white;
@@ -132,45 +153,34 @@ main{
     flex-direction: column;
 }
 .carousel {
-    position: relative;
-    max-width: 300px;
-    margin: 30px auto;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.carousel img {
-    width: 300px;
-    height: auto;
-    flex-shrink: 0;
-    flex-wrap: nowrap;
-    
+.carousel-track img {
+  width: 100px;    
+  height: auto;
+  border-radius: 10px;
+  opacity: 0.6;
+  transform: scale(0.8);
+  transition: all 0.6s ease;
 }
 
-.carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-.carousel button:hover {
-    background: rgba(0,0,0,0.9);
-}
-
-.carousel .prev {
-    left: 10px;
-}
-.carousel .next {
-    right: 10px;
+.carousel-track img.active {
+  width: 180px;   
+  opacity: 1;
+  transform: scale(1);
 }
