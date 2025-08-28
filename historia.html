@@ -20,6 +20,15 @@
                     <li><a href="linhadotempo.html">Linha do Tempo</a></li>
                     <li><a href="umpoucosobrearteterapia.html">Um pouco sobre Arteterapia</a></li>
                 </ul>
+            </nav>
+        <div class="butao">
+                <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
+            </div>
+            <script>
+                const toggleDarkMode = () => {
+                    document.documentElement.classList.toggle('dark-mode');
+                };
+            </script>
     </header>
     <div class="subtitulo">
             <h2>Quem Somos</h2>
@@ -51,13 +60,5 @@
             <img class="img5" src=".\Imagens\imagem11.png" alt="" width="100px">
         </div>
     </main>
-<div class="butao">
-            <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
-        </div>
-        <script>
-            const toggleDarkMode = () => {
-                document.documentElement.classList.toggle('dark-mode');
-            };
-        </script>  
 </body>
 </html>
