@@ -131,7 +131,7 @@ main{
 }
 .carousel {
     position: relative;
-    max-width: 600px;
+    max-width: 300px;
     margin: 30px auto;
     overflow: hidden;
     border-radius: 12px;
@@ -144,7 +144,7 @@ main{
 }
 
 .carousel img {
-    width: 600px;
+    width: 300px;
     height: auto;
     flex-shrink: 0;
     flex-wrap: nowrap;
