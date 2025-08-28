@@ -53,7 +53,13 @@
             <img class="img5" src=".\Imagens\imagem11.png" alt="">
         </div>
     </main>
-    <footer>
-    </footer>
+<div class="butao">
+            <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
+        </div>
+        <script>
+            const toggleDarkMode = () => {
+                document.documentElement.classList.toggle('dark-mode');
+            };
+        </script>  
 </body>
 </html>

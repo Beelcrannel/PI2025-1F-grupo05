@@ -51,7 +51,13 @@
             <p>Margaret Naumburg e Edith Kramer desenvolvem métodos que estruturam a arte-terapia moderna nos EUA: Naumburg: Arte como expressão do inconsciente. Kramer: Arte com foco no processo criativo.</p>
         </div>
     </main>
-    <footer>
-    </footer>
+<div class="butao">
+            <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
+        </div>
+        <script>
+            const toggleDarkMode = () => {
+                document.documentElement.classList.toggle('dark-mode');
+            };
+        </script>
 </body>
 </html>

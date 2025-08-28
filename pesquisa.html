@@ -23,5 +23,13 @@
                     <li><a href="login.html">Login</a></li>
                 </ul>
     </header>
+    <div class="butao">
+            <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
+        </div>
+        <script>
+            const toggleDarkMode = () => {
+                document.documentElement.classList.toggle('dark-mode');
+            };
+        </script>
 </body>
 </html>
