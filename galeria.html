@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
-    <link rel="stylesheet" href=".\CSS\style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <header>
         <div class="imagemlogo">
-            <img src=".\Imagens\Logo.jpg" alt="Logo Expressa Tec" width="50">
+            <img src="./Imagens/Logo.jpg" alt="Logo Expressa Tec" width="50">
         </div>
         <div class="menutopo">
             <nav>
@@ -21,98 +21,111 @@
                     <li><a href="umpoucosobrearteterapia.html">Um pouco sobre Arteterapia</a></li>
                 </ul>
             </nav>
+        </div>
         <div class="butao">
-                <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
-            </div>
-            <script>
-                const toggleDarkMode = () => {
-                    document.documentElement.classList.toggle('dark-mode');
-                };
-            </script>
+            <button onclick="toggleDarkMode()">Alternar Modo Escuro</button>
+        </div>
+        <script>
+            const toggleDarkMode = () => {
+                document.documentElement.classList.toggle('dark-mode');
+            };
+        </script>
     </header>
-        <h1>Galeria</h1>
+
+    <h1>Galeria</h1>
+
     <main>
-        <div class="musica1">
-            <img src="./Imagens/Ac_Dc.jpg" alt="">
+
+        <h2>Músicas</h2>
+        <div class="carousel">
+            <button class="prev">◀</button>
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <a href="pagina1.html" class="carousel-item">
+                        <img src="./Imagens/Ac_Dc.jpg" alt="AC/DC">
+                    </a>
+                    <a href="pagina2.html" class="carousel-item">
+                        <img src="./Imagens/Album_blood.jpg" alt="Album Blood">
+                    </a>
+                    <a href="pagina3.html" class="carousel-item">
+                        <img src="./Imagens/Seu_Jorge.jpg" alt="Seu Jorge">
+                    </a>
+                    <a href="pagina4.html" class="carousel-item">
+                        <img src="./Imagens/nirvana.webp" alt="Nirvana">
+                    </a>
+                </div>
+            </div>
+            <button class="next">▶</button>
         </div>
-        <div class="musica2">
-            <img src="./Imagens/Album_blood.jpg" alt="">
+
+        <h2>Livros</h2>
+        <div class="carousel">
+            <button class="prev">◀</button>
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <div class="carousel-item"><img src="./Imagens/percy_jackson.jpeg" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/o_livro_de_capa_vermelha.jpeg" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/vovo_virou_semente.jpg" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/torto_arado.webp" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/livro_extra1.jpg" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/livro_extra2.jpg" alt=""></div>
+                </div>
+            </div>
+            <button class="next">▶</button>
         </div>
-        <div class="musica3">
-            <img src="./Imagens/Seu_Jorge.jpg" alt="">
+
+        <h2>E-Books</h2>
+        <div class="carousel">
+            <button class="prev">◀</button>
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <div class="carousel-item"><img src="./Imagens/inteligencia_artificial.webp" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/rise_above.webp" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/saude.webp" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/the_arrival.jpg" alt=""></div>
+                </div>
+            </div>
+            <button class="next">▶</button>
         </div>
-        <div class="musica4">
-            <img src="./Imagens/nirvana.webp" alt="">
+
+        <h2>Vídeos</h2>
+        <div class="carousel">
+            <button class="prev">◀</button>
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <div class="carousel-item"><img src="./Imagens/arteterapia.jpg" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/oque_e_arteterapia.jpg" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/curso_de_arteterapia.jpeg" alt=""></div>
+                    <div class="carousel-item"><img src="./Imagens/beneficios_da_arterapia.jpg" alt=""></div>
+                </div>
+            </div>
+            <button class="next">▶</button>
         </div>
-        <div class="livro1">
-            <img src="./Imagens/percy_jackson.jpeg" alt="">
-        </div>
-        <div class="livro2">
-            <img src="./Imagens/o_livro_de_capa_vermelha.jpeg" alt="">
-        </div>
-        <div class="livro3">
-            <img src="./Imagens/vovo_virou_semente.jpg" alt="">
-        </div>
-        <div class="livro4">
-            <img src="./Imagens/torto_arado.webp" alt="">
-        </div>
-        <div class="ebook1">
-            <img src="./Imagens/inteligencia_artificial.webp" alt="">
-        </div>
-        <div class="ebook2">
-            <img src="./Imagens/rise_above.webp" alt="">
-        </div>
-        <div class="ebook3">
-            <img src="./Imagens/saude.webp" alt="">
-        </div>
-        <div class="ebook4">
-            <img src="./Imagens/the_arrival.jpg" alt="">
-        </div>
-        <div class="video1">
-            <img src="./Imagens/arteterapia.jpg" alt="">
-        </div>
-        <div class="video2">
-            <img src="./Imagens/oque_e_arteterapia.jpg" alt="">
-        </div>
-        <div class="video3">
-            <img src="./Imagens/curso_de_arteterapia.jpeg" alt="">
-        </div>
-        <div class="video4">
-            <img src="./Imagens/beneficios_da_arterapia.jpg" alt="">
-        </div>
-        <div class="imagem1">
-            <img src="./Imagens/maos-colorida.jpeg" alt="">
-        </div>
-        <div class="imagem2">
-            <img src="./Imagens/cristo_redentor.jpeg" alt="">
-        </div>
-        <div class="imagem3">
-            <img src="./Imagens/por_do_sol.jpg" alt="">
-        </div>
-        <div class="imagem4">
-            <img src="./Imagens/onda.webp" alt="">
-        </div>
+
     </main>
-        <footer>
+
+    <footer>
         <div class="footer-container">
             <div class="footer-section">
-            <h4>Expressa Tec</h4>
-            <p>Biblioteca online de saúde mental, arte e bem-estar.</p>
+                <h4>Expressa Tec</h4>
+                <p>Biblioteca online de saúde mental, arte e bem-estar.</p>
             </div>
             <div class="footer-section">
-            <h4>Links Úteis</h4>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="historia.html">Quem somos</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="linhadotempo.html">Linha do Tempo</a></li>
-                <li><a href="umpoucosobrearteterapia.html">Arteterapia</a></li>
-            </ul>
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">Quem somos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="linhadotempo.html">Linha do Tempo</a></li>
+                    <li><a href="umpoucosobrearteterapia.html">Arteterapia</a></li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Expressa Tec. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="./JS/carousel.js"></script>
 </body>
 </html>
